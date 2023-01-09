@@ -1,21 +1,59 @@
+@font-face {
+	font-family: ISOCPEUR;
+	src: url("/fonts/isocpeur.ttf") format(truetype);
+}
+@font-face {
+	font-family: AGENCY;
+	src: url(/fonts/agency-fb.ttf) format(truetype);
+}
+:root {
+	--background-color: rgb(25, 25, 25);
+	--nav-bar-color: rgb(12, 14, 36);
+	
+	--nav-bar-opacity: 50%;
 
-.link {
-   color:rgb(0, 0, 0);
-   background-color: rgba(179, 56, 35, 0.164);
-   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-   padding: 10px;
+	--text-color: rgb(255, 255, 255);
+	--text-hover-color: rgb(217, 59, 59);
+	
+	--link-color: red;
+	--link-hover-color: red;
+
+	--hover-color: red;
+	--text-font: 'ISOCPEUR', sans-serif;
+
 }
 
-.main-body-home {
-   background-color: rgb(183, 183, 183);
+.nav-bar-logo {
+	height: 20px;
+	opacity: 50%;
+	padding-left: 40px;
+	padding-right: 20px;
+}
+
+.link {
+   color: var(--text-color);
+   background-color: rgba(179, 56, 35, 0.164);
+   font-family: var(--text-font);
+   
+
+	padding: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	line-height: 30px;
+}
+
+.main-body-home, .main-body-about, .main-body-projects, .main-body-blog, .main-body-team {
+   background-color: var(--background-color);
 	margin-top: 100px;
 	margin-bottom: 100px;
 }
 
 .top-bar {
-   background-color: rgb(126, 126, 153);
+   background-color: var(--nav-bar-color);
 	opacity: 90%;
-	
+	display: flex;
+	flex-direction: row;
+
 	position: fixed;
 
 	width: 90%;
@@ -29,11 +67,12 @@
 
    padding-top: 10px;
    padding-bottom: 10px;
+	font-family: var(--text-font);
 
 }
 .bottom-bar {
 
-	background-color: rgb(137, 122, 122);
+	background-color: var(--nav-bar-color);
 	opacity: 70%;
 
 	position: fixed;
@@ -47,28 +86,11 @@
 }
 
 .bottom-text {
-	color: black;
+	color: var(--text-color);
 	font-size: 20px;
-	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	font-family: var(--text-font);
 	font-weight: bold;
 	letter-spacing: 5px;
-}
-
-.button-nav {
-   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-   font-size: 25px;
-   background-color: aqua;
-
-   border: 0pt;
-	
-   border-radius: 10px;
-   padding-left: 10px;
-   padding-right: 10px;
-}
-
-.button-nav :hover {
-   color: blue;
-    
 }
 
 .pdf-list{
@@ -78,7 +100,7 @@
 
 .navbar-link {
 	text-decoration: none;
-	color: black;
+	color: var(--text-color);
 	padding-left: 10px;
 	padding-right: 10px;
 }
