@@ -8,84 +8,63 @@
 }
 :root {
 	--background-color: rgb(25, 25, 25);
-	--nav-bar-color: rgb(12, 14, 36);
-	
-	--nav-bar-opacity: 50%;
+	--nav-bar-color: rgb(117, 117, 123);
 
 	--text-color: rgb(255, 255, 255);
-	--text-hover-color: rgb(217, 59, 59);
-	
 	--link-color: red;
-	--link-hover-color: red;
 
-	--hover-color: red;
 	--text-font: 'ISOCPEUR', sans-serif;
+	--heading: 'AGENCY', sans-serif;
 
+	--link-hover-color: red;
+	--text-hover-color: rgb(217, 59, 59);
+	--hover-color: red;
 }
-
 .nav-bar-logo {
-	height: 20px;
-	opacity: 50%;
-	padding-left: 40px;
-	padding-right: 20px;
+	max-height: 30px; opacity: 90%;
 }
-
+.gen-text {
+	font-family: var(--text-font);
+	color: var(--text-color);
+}
 .link {
    color: var(--text-color);
-   background-color: rgba(179, 56, 35, 0.164);
    font-family: var(--text-font);
    
 
-	padding: 5px;
-	padding-left: 10px;
-	padding-right: 10px;
+	padding: 5px; padding-left: 10px; padding-right: 10px;
 	line-height: 30px;
 }
 
 .main-body-home, .main-body-about, .main-body-projects, .main-body-blog, .main-body-team {
-   background-color: var(--background-color);
-	margin-top: 100px;
-	margin-bottom: 100px;
+  background-color: var(--background-color);
+	margin-top: 100px; margin-bottom: 100px; margin-left: 10px; margin-right: 10px;
 }
 
 .top-bar {
-   background-color: var(--nav-bar-color);
-	opacity: 90%;
-	display: flex;
-	flex-direction: row;
-
-	position: fixed;
-
-	width: 90%;
-	top: 10px;
-
-   border-radius: 15px;
-	overflow: hidden;
-
+	background-color: var(--nav-bar-color);
 	text-align: center;
 	align-items: center;
+	opacity: 90%;
+	display: grid;
+	grid-template-columns: 1fr 3fr 1fr;
 
-   padding-top: 10px;
-   padding-bottom: 10px;
-	font-family: var(--text-font);
-
+width: 90%;
+	position: fixed;
+	top: 15px;
+  border-radius: 15px;
+	overflow: hidden;
+ 	padding-top: 10px; padding-bottom: 10px; 
+	margin-left: 50px; margin-right: 50px;
+	font-family: var(--heading);
 }
 .bottom-bar {
-
 	background-color: var(--nav-bar-color);
 	opacity: 70%;
-
 	position: fixed;
-
-	align-items: center;
-	text-align: center;
-	
-	bottom: 10px;
 	width: 100%;
-
-}
-
-.bottom-text {
+	align-items: center; text-align: center;
+	bottom: 10px;
 	color: var(--text-color);
 	font-size: 20px;
 	font-family: var(--text-font);
@@ -93,7 +72,7 @@
 	letter-spacing: 5px;
 }
 
-.pdf-list{
+.pdf-list {
 
 
 }
@@ -103,4 +82,14 @@
 	color: var(--text-color);
 	padding-left: 10px;
 	padding-right: 10px;
+	padding-bottom: 10px; padding-right: 10px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
 }
