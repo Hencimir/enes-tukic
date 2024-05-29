@@ -1,3 +1,4 @@
+
 @font-face {
 	font-family: ISOCPEUR;
 	src: url("/fonts/isocpeur.ttf") format(truetype);
@@ -70,11 +71,6 @@ width: 90%;
 	font-family: var(--text-font);
 	font-weight: bold;
 	letter-spacing: 5px;
-}
-
-.pdf-list {
-
-
 }
 
 .navbar-link {
