@@ -1,38 +1,40 @@
-
-@font-face {
-	font-family: ISOCPEUR;
-	src: url("/fonts/isocpeur.ttf") format(truetype);
-}
 @font-face {
 	font-family: AGENCY;
 	src: url(/fonts/agency-fb.ttf) format(truetype);
 }
+@font-face {
+	font-family: Impact, Helvetica ,Arial, sans-serif;
+	src: url(/fonts/impact.ttf) format(truetype);
+}
+
 :root {
 	--background-color: rgb(25, 25, 25);
 	--nav-bar-color: rgb(117, 117, 123);
 
 	--text-color: rgb(255, 255, 255);
 	--link-color: red;
+	--text-font: 'impact', sans-serif;
+	--link-font: 'impact', sans-serif;
 
-	--text-font: 'ISOCPEUR', sans-serif;
 	--heading: 'AGENCY', sans-serif;
 
 	--link-hover-color: red;
 	--text-hover-color: rgb(217, 59, 59);
 	--hover-color: red;
 }
+
 .nav-bar-logo {
 	max-height: 30px; opacity: 90%;
 }
+
 .gen-text {
 	font-family: var(--text-font);
 	color: var(--text-color);
 }
-.link {
-   color: var(--text-color);
-   font-family: var(--text-font);
-   
 
+.link {
+  color: var(--text-color);
+  font-family: var(--link-font);
 	padding: 5px; padding-left: 10px; padding-right: 10px;
 	line-height: 30px;
 }
@@ -49,8 +51,7 @@
 	opacity: 90%;
 	display: grid;
 	grid-template-columns: 1fr 3fr 1fr;
-
-width: 90%;
+	width: 90%;
 	position: fixed;
 	top: 15px;
   border-radius: 15px;
@@ -59,6 +60,7 @@ width: 90%;
 	margin-left: 50px; margin-right: 50px;
 	font-family: var(--heading);
 }
+
 .bottom-bar {
 	background-color: var(--nav-bar-color);
 	opacity: 70%;
