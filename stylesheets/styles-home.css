@@ -1,30 +1,72 @@
 @font-face {
-	font-family: AGENCY;
-	src: url(/fonts/agency-fb.ttf) format(truetype);
+	font-family: Impact, Helvetica, sans-serif;
+	src: url(/GITHUB/enes-tukic/fonts/impact.ttf) format(truetype);
 }
 @font-face {
-	font-family: Impact, Helvetica ,Arial, sans-serif;
-	src: url(/fonts/impact.ttf) format(truetype);
+	font-family: agency, sans-serif;
+	src: url(/GITHUB/enes-tukic/fonts/agency-fb.ttf) format(truetype);
 }
-
 :root {
-	--background-color: rgb(25, 25, 25);
-	--nav-bar-color: rgb(117, 117, 123);
+	--page-background-color: rgb(255, 255, 255);
+	
+	--nav-bar-top-color: rgb(255, 255, 255);
+	--nav-bar-bottom-color: rgb(255, 255, 255);
 
-	--text-color: rgb(255, 255, 255);
-	--link-color: red;
-	--text-font: 'impact', sans-serif;
+	--text1-color: rgb(255, 78, 78);
+	--text2-color: rgb(169, 23, 23);
+	
+	--link-color: rgb(70, 22, 22);
+	
+	--heading1: 'AGENCY', sans-serif;
+	--heading2: 'IMPACT', sans-serif;
+	--text-font1: 'impact', sans-serif;
+	--text-font2: 'arial' sans-serif;
+
 	--link-font: 'impact', sans-serif;
-
-	--heading: 'AGENCY', sans-serif;
-
-	--link-hover-color: red;
-	--text-hover-color: rgb(217, 59, 59);
-	--hover-color: red;
 }
 
-.nav-bar-logo {
-	max-height: 30px; opacity: 90%;
+.main-body-home, .main-body-about, .main-body-projects, .main-body-blog, .main-body-portfolio {
+  background-color: var(--page-background-color);
+	margin-top: 20px;
+	padding-top: 20px;
+}
+.top-navbar {
+	font-family: var(--heading2);
+	display: flex;
+	justify-content: center; /*horizontalno centar*/
+	align-items: center; /*vertikalno centar*/
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	margin-top: 10px;
+	padding: 10px;
+	z-index: 10;
+}
+
+.bottom-navbar {
+	font-family: var(--heading2);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	margin-bottom: 5px;
+	padding: 5px;
+	z-index: 10;
+}
+
+.top-navbar-link {
+	color: var(--link-color);
+	text-decoration: none;
+	margin: 0 10px;
+}
+.bottom-navbar-icon {
+	color: var(--link-color);
+	text-decoration: none;
+
 }
 
 .gen-text {
@@ -32,66 +74,14 @@
 	color: var(--text-color);
 }
 
-.link {
-  color: var(--text-color);
-  font-family: var(--link-font);
-	padding: 5px; padding-left: 10px; padding-right: 10px;
-	line-height: 30px;
-}
-
-.main-body-home, .main-body-about, .main-body-projects, .main-body-blog, .main-body-team {
-  background-color: var(--background-color);
-	margin-top: 100px; margin-bottom: 100px; margin-left: 10px; margin-right: 10px;
-}
-
-.top-bar {
-	background-color: var(--nav-bar-color);
-	text-align: center;
-	align-items: center;
-	opacity: 90%;
-	display: grid;
-	grid-template-columns: 1fr 3fr 1fr;
-	width: 90%;
-	position: fixed;
-	top: 15px;
-  border-radius: 15px;
-	overflow: hidden;
- 	padding-top: 10px; padding-bottom: 10px; 
-	margin-left: 50px; margin-right: 50px;
-	font-family: var(--link-font);
-}
-
-.bottom-bar {
-	background-color: var(--nav-bar-color);
-	opacity: 70%;
-	position: fixed;
-	width: 100%;
-	align-items: center; text-align: center;
-	bottom: 10px;
-	color: var(--text-color);
-	font-size: 20px;
-	font-family: var(--text-font);
-	font-weight: bold;
-	letter-spacing: 5px;
-}
-
-.navbar-link {
-	text-decoration: none;
-	color: var(--text-color);
-	padding-left: 10px;
-	padding-right: 10px;
-	padding-bottom: 10px; padding-right: 10px;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+.doc-link {
+  color: var(--link-color);
+  font-family: var(--heading1);
 }
 
 .container {
  opacity: 50%;
+}
+.pdf-list{
+	display: grid;
 }
